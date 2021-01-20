@@ -115,7 +115,7 @@ int get_params()
 }
 
 /* ============================================= */
-main(argc, argv)
+int main(argc, argv)
      int argc;
      char **argv;
 {
@@ -138,5 +138,6 @@ main(argc, argv)
 	
 	read_graph_DIMACS_bin( argv[1] );
 	write_graph_DIMACS_ascii( name );
+        return 0;
 }
 

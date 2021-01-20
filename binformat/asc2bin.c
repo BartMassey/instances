@@ -131,7 +131,7 @@ int get_params()
 }
 
 /* ============================================= */
-main(argc, argv)
+int main(argc, argv)
      int argc;
      char **argv;
 {
@@ -149,5 +149,6 @@ main(argc, argv)
 	  sprintf(name, "%s", argv[2]);
 	
 	write_graph_DIMACS_bin( name );
+        return 0;
 }
 

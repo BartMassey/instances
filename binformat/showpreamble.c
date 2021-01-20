@@ -8,6 +8,7 @@
    */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define MAXPREAM 10000
 static char Preamble[MAXPREAM];
@@ -55,7 +56,7 @@ void read_graph_DIMACS_bin(file)
 }
 
 /* ============================================= */
-main(argc, argv)
+int main(argc, argv)
      int argc;
      char **argv;
 {
@@ -72,5 +73,6 @@ main(argc, argv)
 	
 	read_graph_DIMACS_bin( argv[1] );
 	write_graph_DIMACS_ascii( name );
+        return 0;
 }
 

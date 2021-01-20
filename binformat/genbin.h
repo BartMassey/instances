@@ -2,6 +2,8 @@
 #define GENBIN
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /* If you change MAX_NR_VERTICES, change MAX_NR_VERTICESdiv8 to be 
 the 1/8th of it */
